@@ -6,6 +6,7 @@ export class MainController {
     this.classAnimation = '';
     this.creationDate = 1515396878539;
     this.toastr = toastr;
+    this.existingPhoto = false;
 
     this.activate($timeout, webDevTec);
   }
@@ -28,6 +29,10 @@ export class MainController {
   showToastr() {
     this.toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
     this.classAnimation = '';
+  }
+
+  takePhoto() {
+    this.existingPhoto = true;
   }
 
   /*

@@ -8,10 +8,11 @@
     <h1>Hi!</h1>
     <h2>How are you feeling today?</h2>
 
-    <video id="video" width="640" height="480" autoplay></video>
-    <canvas id="canvas" width="640" height="480"></canvas>
-    <div style="width: 100px">
-      <button id="snap">Take a Photo</button>
+    <video ng-if="!main.existingPhoto" id="video" width="440" height="480" autoplay></video>
+    <canvas ng-if="main.existingPhoto" id="canvas" width="440" height="480"></canvas>
+    {{main.existingPhoto}}
+    <div style="width: 100px; margin: 0 auto">
+      <button id="snap" ng-click="main.takePhoto()">Take a Photo</button>
       <a id="dl-btn" href="#" download="glorious_selfie.png">
         <button type="button">Save Photo</button>
       </a>
@@ -24,6 +25,7 @@
       Always a pleasure scaffolding your apps.
     </p>-->
     <p class="animated infinite">
+      {{main.videoPlayer();}}
       <button type="button" style="background-color: #199B8A; border: 1px solid #199B8A;" class="btn btn-lg btn-success" ng-click="main.videoPlayer()">Wait! I'm not [enter feeling here]</button>
     </p>
   <!--  <p>
