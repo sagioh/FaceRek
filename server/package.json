@@ -1,0 +1,20 @@
+{
+  "name": "facerecoveryverycoolapp",
+  "version": "1.0.0",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "request": "^2.83.0"
+  },
+  "scripts": {
+    "start": "node GetWeather.js"
+  },
+  "author": "Sagi Ohayon",
+  "license": "ISC",
+  "description": "Very very cool app",
+  "main": "getWeather.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "\u0016\u0016https://github.com/sagioh/faceRecoVeryVeryCoolApp.git"
+  }
+}
