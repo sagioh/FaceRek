@@ -7,12 +7,24 @@
   <div class="jumbotron text-center" style="margin-top: -20px; margin-bottom: 0; background-color: black; color: white;">
     <h1>Hi!</h1>
     <h2>How are you feeling today?</h2>
+
+    <video id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <div style="width: 100px">
+      <button id="snap">Take a Photo</button>
+      <a id="dl-btn" href="#" download="glorious_selfie.png">
+        <button type="button">Save Photo</button>
+      </a>
+    </div>
+
+
+
     <div style="width: 200px; height: 200px; background-color: #199B8A; border-radius: 100px; margin: 40px auto;"></div>
     <!--<p class="lead">
       Always a pleasure scaffolding your apps.
     </p>-->
     <p class="animated infinite">
-      <button type="button" style="background-color: #199B8A; border: 1px solid #199B8A;" class="btn btn-lg btn-success" ng-click="main.showToastr()">Wait! I'm not [enter feeling here]</button>
+      <button type="button" style="background-color: #199B8A; border: 1px solid #199B8A;" class="btn btn-lg btn-success" ng-click="main.videoPlayer()">Wait! I'm not [enter feeling here]</button>
     </p>
   <!--  <p>
       With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
